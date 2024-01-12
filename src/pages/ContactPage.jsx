@@ -10,13 +10,6 @@ function ContactPage(props) {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-
-    // Perform form validation
-    if (!name || !email || !message) {
-      setErrorMessage("Please fill in all the required fields");
-      return;
-    }
-
     props.onSubmit({
       name,
       email,
@@ -43,6 +36,13 @@ function ContactPage(props) {
       setErrorMessage("Name is required");
     } else if (name === "email" && !value) {
       setErrorMessage("Email is required");
+    } else if (name === "email")  {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(value)) {
+        setErrorMessage("Your email is invalid");
+      } else {
+        setErrorMessage("");
+      }
     } else if (name === "message" && !value) {
       setErrorMessage("Message is required");
     } else {
