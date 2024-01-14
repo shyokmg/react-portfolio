@@ -51,6 +51,7 @@ function ContactPage(props) {
   };
 return (
     <div className="d-flex justify-content-center">
+      <h1>Contact</h1>
       <form className="form" onSubmit={handleSubmit}>
         <label className="form-label">Name:</label>
         <input
