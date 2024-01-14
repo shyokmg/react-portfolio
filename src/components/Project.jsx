@@ -1,25 +1,28 @@
-import { SiGithub } from "react-icons/si";
+import React from 'react';
+import { SiGithub } from 'react-icons/si';
 
-function Project({title, description, deployedLink, githubLink}) {
-    return (
-        <div className="col-md-4 mb-4">
+function Project({ title, description, deployedLink, githubLink }) {
+  return (
+    <div className="col-md-6 mb-4">
       <div className="card">
         <div className="card-body">
-          <h5 className="card-title">
-            <a href={deployedLink} target="_blank" rel="noopener noreferrer">
-              {title}
+          <div className="d-flex align-items-center">
+            <h5 className="card-title mb-0 me-2">
+              <a href={deployedLink} target="_blank" rel="noopener noreferrer">
+                {title}
+              </a>
+            </h5>
+            <h2>
+            <a href={githubLink} target="_blank" rel="noopener noreferrer">
+              <SiGithub />
             </a>
-            
-          </h5>
-          <a href={githubLink} target="_blank" rel="noopener noreferrer">
-            <SiGithub />
-          </a>
+            </h2>
+          </div>
           <p className="card-text">{description}</p>
-          
         </div>
       </div>
     </div>
-    )
+  );
 }
 
-export default Project
+export default Project;

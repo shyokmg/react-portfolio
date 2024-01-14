@@ -51,6 +51,7 @@ function PortfolioPage() {
 
   return (
     <div className="container">
+      <h2>Portfolio</h2>
     <div className="row">
       {projects.map((project) => (
         <Project
