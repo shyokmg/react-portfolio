@@ -6,8 +6,13 @@ function App() {
   return (
     <>
       <Header />
+      <div className='content-background'>
       <Outlet />
+      </div>
+      <div className='footer-background'>
       <Footer />
+
+      </div>
     </>
   );
 }

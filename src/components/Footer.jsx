@@ -9,17 +9,17 @@ export default function Footer() {
   return (
     <div className="d-flex justify-content-center gap-3">
       <h1>
-        <a href={githubLink} target="_blank" rel="noopener noreferrer">
+        <a className="footer-link" href={githubLink} target="_blank" rel="noopener noreferrer">
           <SiGithub />
         </a>
       </h1>
       <h1>
-        <a href={linkedInLink} target="_blank" rel="noopener noreferrer">
+        <a className="footer-link" href={linkedInLink} target="_blank" rel="noopener noreferrer">
           <GrLinkedin />
         </a>
       </h1>
       <h1>
-        <a href={stackOverFlowLink} target="_blank" rel="noopener noreferrer">
+        <a className="footer-link" href={stackOverFlowLink} target="_blank" rel="noopener noreferrer">
         <ImStackoverflow />
         </a>
       </h1>
