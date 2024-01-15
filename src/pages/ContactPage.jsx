@@ -50,45 +50,53 @@ function ContactPage(props) {
     }
   };
 return (
-    <div className="d-flex justify-content-center">
-      <h1>Contact</h1>
-      <form className="form" onSubmit={handleSubmit}>
-        <label className="form-label">Name:</label>
-        <input
-          type="text"
-          placeholder="Add to your name"
-          value={name}
-          name="name"
-          className="form-control"
-          onBlur={handleValidation}
-          onChange={handleChange}
-        ></input>
-        <label className="form-label">Email address:</label>
-        <input
-          type="text"
-          placeholder="Add to your email"
-          value={email}
-          name="email"
-          className="form-control"
-          onBlur={handleValidation}
-          onChange={handleChange}
-        ></input>
-        <label className="form-label">Message:</label>
-        <textarea
-          type="text"
-          placeholder="Add to your message"
-          value={message}
-          name="message"
-          className="form-control"
-          onBlur={handleValidation}
-          onChange={handleChange}
-        ></textarea>
-        {errorMessage && (
-          <div className="error-message">{errorMessage}</div>
-        )}
-        <button className="contact-button">Submit</button>
-      </form>
+  <div className="container">
+  <h1 className="text-start mb-4">Contact</h1>
+  <form onSubmit={handleSubmit}>
+    <div className="mb-3">
+      <label htmlFor="name" className="form-label">Name:</label>
+      <input
+        type="text"
+        id="name"
+        placeholder="Add your name"
+        value={name}
+        name="name"
+        className="form-control"
+        onBlur={handleValidation}
+        onChange={handleChange}
+      />
     </div>
+    <div className="mb-3">
+      <label htmlFor="email" className="form-label">Email address:</label>
+      <input
+        type="text"
+        id="email"
+        placeholder="Add your email"
+        value={email}
+        name="email"
+        className="form-control"
+        onBlur={handleValidation}
+        onChange={handleChange}
+      />
+    </div>
+    <div className="mb-3">
+      <label htmlFor="message" className="form-label">Message:</label>
+      <textarea
+        id="message"
+        placeholder="Add your message"
+        value={message}
+        name="message"
+        className="form-control"
+        onBlur={handleValidation}
+        onChange={handleChange}
+      ></textarea>
+    </div>
+    {errorMessage && (
+      <div className="error-message">{errorMessage}</div>
+    )}
+    <button type="submit" className="btn btn-primary">Submit</button>
+  </form>
+</div>
   ) 
 }
 
