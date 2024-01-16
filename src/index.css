@@ -4,7 +4,13 @@ a {
   /* color: #FDE74C; */
 }
 
+.content-background {
+  min-height: 80vh;
+}
 
+.footer-background {
+  min-height: 20vh;
+}
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

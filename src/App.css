@@ -26,7 +26,7 @@
   position: relative;
   z-index: 1;
   opacity: 0;
-  transition: opacity 0.3s ease-in;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .card:hover .content {
@@ -35,43 +35,45 @@
 }
 
 .card a {
-  /* text-decoration: none; */
   color: #7FDEFF;
 }
 
+.card a:hover {
+  color: #00A8E0;
+}
 
 .card-text {
   color: #DABFFF;
 }
 
 .content-background {
-  background-color: #7FDEFF;
-}
-
-.custom-navbar {
   background-color: #2C2A4A;
 }
 
+.custom-navbar {
+  background-color: #DABFFF;
+}
+
 .navbar-brand {
-  color: #7FDEFF;
+  color: #2C2A4A;
 }
 
 .nav-item a {
-  color: #DABFFF; /* Default color */
+  color: #4F518C; /* Default color */
 }
 
 .nav-item a:hover {
-  color: #7FDEFF; /* Color when hovered */
+  color: #4F518C; /* Color when hovered */
 }
 
 .nav-item a.active {
-  color: #7FDEFF; /* Color when active */
+  color: #4F518C; /* Color when active */
 }
 
 
 
-.page-title {
-  color: #2C2A4A;
+.container {
+  color: #7FDEFF;
 }
 
 .footer-background {
@@ -80,4 +82,13 @@
 
 .footer-link {
   color: #7FDEFF;
+}
+
+.footer-link:hover {
+  color: #00A8E0;
+}
+
+.profile-icon {
+  font-size: 90px;
+  /* Add any other desired styles for the profile icon */
 }
