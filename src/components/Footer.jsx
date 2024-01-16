@@ -7,7 +7,7 @@ export default function Footer() {
   const linkedInLink = "https://www.linkedin.com/in/shoyo-kumagai-855020123/";
   const stackOverFlowLink = "https://stackoverflow.com/"
   return (
-    <div className="d-flex justify-content-center gap-3">
+    <div className="d-flex justify-content-center gap-3 p-3" >
       <h1>
         <a className="footer-link" href={githubLink} target="_blank" rel="noopener noreferrer">
           <SiGithub />

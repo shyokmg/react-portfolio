@@ -50,7 +50,7 @@ function ContactPage(props) {
     }
   };
 return (
-  <div className="container">
+  <div className="container p-5">
   <h1 className="text-start mb-4">Contact</h1>
   <form onSubmit={handleSubmit}>
     <div className="mb-3">

@@ -63,11 +63,11 @@ function PortfolioPage() {
   ];
 
   return (
-    <div className="container">
+    <div className="container p-5">
       
         <h1>Portfolio</h1>
         
-    <div className="row">
+    <div className="row p-2">
       {projects.map((project) => (
         <Project
           key={project.id}

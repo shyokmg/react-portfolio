@@ -19,7 +19,7 @@
 }
 
 .card:hover .card-image {
-  filter: blur(3px) brightness(60%);
+  filter: blur(3px) brightness(30%);
 }
 
 .card .content {
@@ -58,16 +58,24 @@
   color: #2C2A4A;
 }
 
+.brand-text {
+  font-size: 50px;
+  color: #2C2A4A;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
 .nav-item a {
-  color: #4F518C; /* Default color */
+  color: #4F518C;
 }
 
 .nav-item a:hover {
-  color: #4F518C; /* Color when hovered */
+  color: #4F518C; 
 }
 
 .nav-item a.active {
-  color: #4F518C; /* Color when active */
+  color: #4F518C; 
 }
 
 
@@ -90,5 +98,13 @@
 
 .profile-icon {
   font-size: 90px;
-  /* Add any other desired styles for the profile icon */
+ 
+}
+
+.resume-link {
+  color: #00A8E0;
+}
+
+.resume-link:hover {
+  color: #7FDEFF;
 }
