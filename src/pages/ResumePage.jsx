@@ -1,4 +1,5 @@
 
+// Resume page component
 export default function ResumePage() {
     return (
         <div className="container p-5">

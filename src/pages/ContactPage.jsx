@@ -1,12 +1,15 @@
 import { useState } from "react";
 
-
+// Contact page component
 function ContactPage(props) {
 
+  // use states to handle user input
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
+
+  // handles submit event 
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -19,6 +22,8 @@ function ContactPage(props) {
     setEmail('');
     setMessage('');
   };
+
+  // handles events when changes are made to the input elements
   const handleChange = (e) => {
     const { name, value } = e.target;
     if (name === 'name') {
@@ -30,6 +35,7 @@ function ContactPage(props) {
     }
   };
 
+  // handles validation of each input element, is called by the onBlur input property when input loses focus
   const handleValidation = (e) => {
     const { name, value } = e.target;
     if (name === "name" && !value) {

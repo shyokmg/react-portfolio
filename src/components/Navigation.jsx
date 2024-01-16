@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import Navbar from './UI/Navbar';
 
+// Calls the Navbar component and sets the links for the navbar
 export default function Navigation() {
     return (
         <Navbar 

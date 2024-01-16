@@ -1,5 +1,6 @@
 import { CgProfile } from "react-icons/cg";
 
+// About me page component
 export default function AboutPage() {
     return (
       <div className="container p-5">

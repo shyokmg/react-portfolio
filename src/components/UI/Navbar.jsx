@@ -1,5 +1,6 @@
 import React from "react";
 
+// Navar handles the bootstrap and styles of the navbar links
 export default function Navbar({ links }) {
   return (
 <nav className="navbar navbar-expand-lg custom-navbar">

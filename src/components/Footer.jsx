@@ -3,6 +3,7 @@ import { GrLinkedin } from "react-icons/gr";
 import { ImStackoverflow } from "react-icons/im";
 
 export default function Footer() {
+// Links to the icons on the footer
   const githubLink = "https://github.com/shyokmg";
   const linkedInLink = "https://www.linkedin.com/in/shoyo-kumagai-855020123/";
   const stackOverFlowLink = "https://stackoverflow.com/"

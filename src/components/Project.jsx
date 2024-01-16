@@ -1,6 +1,7 @@
 import React from "react";
 import { SiGithub } from "react-icons/si";
 
+// Function that gets the project details from the Portfolio page component
 function Project({ title, description, deployedLink, githubLink, image }) {
   const cardStyle = {
     backgroundImage: `url(${image})`,
@@ -9,6 +10,7 @@ function Project({ title, description, deployedLink, githubLink, image }) {
   };
 
   return (
+    // Bootstrap structure for the project on each card
     <div className="col-md-6 mb-4">
       <div className="card card-with-aspect-ratio">
         <div className="card-body">
